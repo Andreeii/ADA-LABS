@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lwI+KCq9SyC9U3v5thESH2J6x5+TyXLkXnyw0xyabOCCOV0QwwdWW6mYJkwa9F7T5Dh3tsErbxnRn1WlXk3GQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrei Turcanu\\Desktop\\ADA-LABS\\ADA-LAB2\\C-Sharp\\LAB2\\Publisher\\Publisher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

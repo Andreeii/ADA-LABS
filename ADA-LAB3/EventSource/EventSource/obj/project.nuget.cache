@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "/miJca2pThPQIjpSbJDLG6ZbTZp4bNr1tgXLJxBZFXZorYtdG8sNTEkr3JYva7hfOmmDTQRWepKvyY7vaGW1Wg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrei Turcanu\\Desktop\\ADA-LABS\\ADA-LAB3\\EventSource\\EventSource\\EventSource.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\protobuf-net\\2.4.6\\protobuf-net.2.4.6.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\Andrei Turcanu\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

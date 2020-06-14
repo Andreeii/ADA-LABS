@@ -1,0 +1,9 @@
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\Andrei Turcanu\Desktop\ADA-LABS\ADA-LAB1\Common\obj\Debug\netcoreapp3.1\Common.pdb
