@@ -1,6 +1,6 @@
 # Aplicatii Distribuite Avansate
 # Lab1
-A fost implementata procesarea cu ajutorul TPL (OpenMP) si AKKA.NET (OpenMPI). Pe parcursul lucrarii s-a facut o paralela intre aceste 2 metodologii. Totodata a fost testata aplicatia cu Sleepy Fibonacci si Busy Fibonacci.
+A fast implementation process using TPL (OpenMP) and AKKA.NET (OpenMPI). During the paper a parallel was made between 2 methodologies. Tests with Sleepy Fibonacci and Busy Fibonacci were also applied.
 
 # TPL sleepy
 ![image](https://user-images.githubusercontent.com/26895687/84590177-f2066e80-ae3c-11ea-8e37-6074b6ef6d3a.png)
@@ -8,7 +8,7 @@ A fost implementata procesarea cu ajutorul TPL (OpenMP) si AKKA.NET (OpenMPI). P
 # TPL busy
 ![image](https://user-images.githubusercontent.com/26895687/84590191-15311e00-ae3d-11ea-9018-b04e8ed19d26.png)
 
-Se observa ca atunci cind rulam Bussy Fibonacci cu mai multe fire de executie - timpul de executie creste mai rapid ca cel cind utilizam sleepy Fibonacci. Asta se datoreaza faptului ca busy fibonacci va consuma resursele procesorului mai drastic ca sleepy fibonacci. Sleepy fibonacci presupune adormirea firului de executie, astfel se reduce consumul.
+It is noticed that when we run Bussy Fibonacci with more threads - the execution time increases faster than when we use sleepy Fibonacci. This is because busy Fibonacci will consume processor resources more drastically than sleepy Fibonacci. Sleepy fibonacci involves putting the thread to sleep, thus reducing consumption.
 
 # AKKA.Net sleepy
 ![image](https://user-images.githubusercontent.com/26895687/84590225-693c0280-ae3d-11ea-9d6e-4ed427700866.png)
@@ -19,17 +19,17 @@ Se observa ca atunci cind rulam Bussy Fibonacci cu mai multe fire de executie - 
 # TPL vs AKKA
 ![image](https://user-images.githubusercontent.com/26895687/84590250-97214700-ae3d-11ea-85e1-018c4015af18.png)
 
-# Concluzie
-Daca sa facem o paralela intre aceste doua abordari: Timpul de executie in cazul cu TPL este un pic mai mic. Asta se datoreaza faptului ca nu este nevoie sa sincronizam actorii si sa transmitem mesaje la actori, insa totodata AKKA.NET permite o decuplare mai eficienta. Pe linga aceasta AKKA.NET permite incapsularea acestui proces de concurenta. Noi nu avem de afacere cu fire de executie, fiecare actor ruleaza pe firul sau de executie si este adormit atit timp cind nu primeste mesaje. Cu ajutorul AKKA.NET se poate foarte eficient de asigurat comunicare intre aplicatii aflate la distanta si prelucrarea mesajelor.In momentul cind numarul de fire de executie depaseste numarul de fire de executie a procesorului, timpul de executie creste.
+# Conclusion
+If we compare this two approaches: The execution time in the case of TPL is a little shorter. This is due to the fact that there is no need to synchronize the actors and send messages to the actors, but at the same time AKKA.NET allows a more efficient decoupling. In addition, AKKA.NET allows the encapsulation of this competition process. We have no business with threads, each actor runs on his thread and is asleep as long as he does not receive messages. With the help of AKKA.NET it is very efficient to ensure communication between remote applications and message processing. When the number of threads exceeds the number of threads of the processor, the execution time increases.
 
 # Lab2
-In aceasta lucrare s-a folosit RabbitMQ. O coada de mesaje ce poate fi folosita de mai multe procese/aplicatii. Cu ajutorul RabbitMQ putem asigura comunicarea intre mai multe procese independent de limbajul de programare in care aceste aplicatii (procese) au fost scrise. In acest laborator au fost folosite limbajele C# si JavaScript (Node JS).
+RabbitMQ was used in this paper. A message queue that can be used by several processes / applications. With the help of RabbitMQ we can ensure communication between several processes regardless of the programming language in which these applications (processes) were written. C # and JavaScript (Node JS) languages were used in this lab.
 
 ![image](https://user-images.githubusercontent.com/26895687/84590317-30e8f400-ae3e-11ea-8161-a1193a8f2851.png)
 
-Aici este reflectat cum un Publisher transmite mesaje, iar 4 Receiveri primesc aceste mesaje. (2 NodeJS si 2 C#) Se observa un grad de distributie a mesajelor echilibrat. Fiecare aplicatie primeste un numar aproximativ de mesaje. Astfel RabbitMQ este un tool foarte eficient in cazuri cind avem aplicatii care efectueaza acelasi lucru dar sunt scrise in limbaje diferite. Cu ajutorul lui putem distribuie niste work joburi intre aceste aplicatii.
+Here it is reflected how a Publisher sends messages, and 4 Receivers receive these messages. (2 NodeJS and 2 C #) A balanced degree of message distribution is observed. Each application receives an approximate number of messages. Thus RabbitMQ is a very effective tool in cases when we have applications that perform the same thing but are written in different languages. With its help we can distribute some work jobs between these applications.
 
 # RabbitMQ vs AKKA.NET (Open MPI)
-Plusurile la implemntarea prin RabbitMQ: + Sunt cozi durabile, mesajele sunt persistate in caz de nevoie. + Putem efectua un mecanism de acknowledgment / Garantarea livrarii mesajului. + Decuplarea limbajelor de programare. + Mesajele se distribuie automat.
+Additions to the implementation through RabbitMQ: + There are durable queues, the messages are persistent in case of need. + We can perform an acknowledgment mechanism / Guarantee of message delivery. + Decoupling of programming languages. + Messages are distributed automatically.
 
-Plusurile la implemntarea prin AKKA.NET: + Intr-un proces sunt mai multi actori (threaduri). Pe cind in cazul cu RabbitMQ un proces proceseaza un mesaj la un moment dat de timp. + Actorii sunt foarte ieftin de creat. + Totusi a fost mai usor de sincronizat actorii decit aplicatiile in cazul cu RabbitMQ + Se scaleaza mai usor
+The pluses of implementing through AKKA.NET: + In a process there are several actors (threads). Whereas in the case of RabbitMQ a process processes a message at a certain point in time. + Actors are very cheap to create. + However, it was easier to synchronize the actors than the applications in the case of RabbitMQ + It is easier to scale
